@@ -1,0 +1,537 @@
+h4{
+    font-size: 20px;
+    color: #222;
+}
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    color: #465b52;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 4px ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.5s ease;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent; 
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.5s ease;
+}
+.section-p1 {
+    padding : 40px 80px
+}
+.section-m1 {
+    margin: 40px 0;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: 	rgb(0, 0, 62);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logo {
+    height: 200px;
+    width: 200px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    padding: 0px 20px;
+    list-style: none;
+    position: relative;
+}
+#navbar li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+    color: goldenrod;
+}
+#navbar li a.active{
+    color:goldenrod
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+    background: goldenrod;
+}
+#hero{
+    background-image: url(images/hero.jpg);
+    height: 90vh;
+    width:100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero h4 {
+    color: goldenrod;
+    padding-bottom: 15px;
+}
+#hero button {
+    background-color: rgb(0, 0, 62);
+    padding: 14px 80px 14px 65px;
+    color: goldenrod;
+    font-weight: 800;
+    cursor: pointer;
+}
+#hero h1 {
+    color: goldenrod;
+    font-weight: 600;
+}
+#hero h2 {
+    color: rgb(0, 0, 62);
+}
+#hero p {
+    font-weight: 1000;
+    color: black;
+}
+#features {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#features .fe-box1{
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow:20px 20px 34px rgb(0, 0, 0, 0.03) ;
+    border: 5px solid rgb(0, 0, 62);
+    border-radius: 10px;
+    margin: 15px 0;
+    background-image: url(images/features/freeshippinggg.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    transition: 0.5s ease;
+}
+#features .fe-box1:hover{
+    box-shadow: 10px 10px 54px rgb(144, 142, 142);
+}
+#features .fe-box2{
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow:20px 20px 34px rgb(0, 0, 0, 0.03) ;
+    border: 5px solid rgb(0, 0, 62);
+    border-radius: 10px;
+    margin: 15px 0;
+    background-image: url(images/features/fastdelivery1.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    transition: 0.5s ease;
+    
+}
+#features .fe-box2:hover{
+    box-shadow: 10px 10px 54px rgb(144, 142, 142);
+}
+#features .fe-box3{
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow:20px 20px 34px rgb(0, 0, 0, 0.03) ;
+    border: 5px solid rgb(0, 0, 62);
+    border-radius: 10px;
+    margin: 15px 0;
+    background-image: url(images/features/happycustomer.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    transition: 0.5s ease;
+    
+}
+#features .fe-box3:hover{
+    box-shadow: 10px 10px 54px rgb(144, 142, 142);
+}
+#features .fe-box4{
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow:20px 20px 34px rgb(0, 0, 0, 0.03) ;
+    border: 5px solid rgb(0, 0, 62);
+    border-radius: 10px;
+    margin: 15px 0;
+    background-image: url(images/features/customersupport.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    transition: 0.5s ease;
+    
+}
+#features .fe-box4:hover{
+    box-shadow: 10px 10px 54px rgb(144, 142, 142);
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#product1 .pro {
+    width: 10%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 5px solid rgb(0, 0, 62); ;
+    box-shadow:20px 20px 34px rgb(0, 0, 0, 0.03) ;
+    border-radius: 10px ;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    
+}
+#product1 .pro:hover {
+    box-shadow: 10px 10px 20px rgb(144, 142, 142) ;
+
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 62) ;
+}
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color: #606083;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    padding: top 7px;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25) ;
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .bag{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    border: 1px solid ;
+}
+#product1 .pro .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/bannnerrrr.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4 {
+    font-size: 16px;
+    color: whitesmoke;
+}
+#banner h2 {
+    font-size: 32px;
+    color: whitesmoke;
+    padding: 10px 0;
+}
+#banner h2 span{
+    font-size: 32px;
+    color: rgb(183, 0, 0);
+    padding: 10px 0;
+}
+#banner button:hover{
+    background-color: rgb(124, 0, 0);
+    color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .bannerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/Sm-banner/apple.avif);
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    cursor: pointer;
+}
+#sm-banner .bannerbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/Sm-banner/apricot.avif);
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    cursor: pointer;
+}
+#sm-banner h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(124, 0, 0);
+} 
+#sm-banner h4{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .bannerbox :hover button{
+    background-color: rgb(0, 0, 62);
+    border: 1px solid rgb(0, 0, 62);
+}
+#sm-banner .bannerbox2 h4{
+    color: black;
+}
+#sm-banner .bannerbox2 h2{
+   color: rgb(0, 0, 62);
+}
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: rgb(0, 0, 62);
+}
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #606083;
+}
+#newsletter p span {
+    color: goldenrod;
+}
+#newsletter .form {
+    display: flex;
+    width: 40% ;
+
+}
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border:  1px solid transparent;
+    border: radius 4px;
+    outline: none ;
+}
+#newsletter button {
+    background-color: goldenrod;
+    color: #fff;
+    white-space: nowrap ;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* shop page */
+#page-header{
+   background-image: url(img/b1.jpg);
+   width: 100%;
+   height: 40vh;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+  flex-direction: column;
+   padding: 10px;
+   margin: 10px;
+
+}
+
+#page-header h2,
+#page-header p{
+   color: #fff;
+}
+
+/* page shifter */
+
+#pagination{
+    text-align: center;
+
+}
+
+
+#pagination a{
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* single product */
+#prodetails{
+    display: flex;
+    margin-top: 10px;
+
+
+}
+
+#prodetails .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+  
+
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+
+}
+#prodetails .single-pro-details h2{
+   font-size: 26px;
+
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+
+
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: white;
+
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}

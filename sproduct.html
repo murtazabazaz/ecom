@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+    </section>
+
+    <section id="prodetails" class="section-p1">
+
+        <div class="single-pro-img">
+            <img src="img/al.jpg" width="100%" id="mainImg" alt=""> <!--big image here -->
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/al.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/hero.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/hero.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/hero.png" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home/Almond</h6>
+            <h4>Authentic Peeled Almonds</h4>
+            <h2>Rs.1000</h2>
+            <select>
+                <option>Select Quantity</option>
+                <option>1Kg</option>
+                <option>2Kg</option>
+                <option>3Kg</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Kashmiri soft shelled almonds are very easy to break and are extensively used as a pocket snack with
+                splendid taste and high nutritional value. Similar to hard shelled kashmiri almonds, they also don't
+                have any strict shape and size, and every tree gives its own unique produce.Kashmir Almonds are often referred to as 'King of Nuts' and are available in different shapes and sizes, it is a highly nutritious food. Almonds are packed with vitamins, minerals, protein and fiber, and are associated with a number of health benefits.
+            </span>
+        </div>
+    </section>
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div id="newstext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get Email updates about our latest <span> special offers </span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="/images/logo.png" height="150px" width="150px" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>AWANTIPORA IUST , KASHMIR</p>
+            <p><strong>Contact:</strong>+91 8493846911 , +91 9596157069</p>
+            <p><strong>Hours:</strong>10:00-18:00</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-instagram"></i>
+                    <i class="fa-youtube"></i>
+                    <i class="fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy and Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Playstore</p>
+            <div class="row">
+                <img src="/images/Pay/playstore.avif" height="40px" width="70px" alt="">
+                <img src="/images/Pay/appstore.png" height="40px" width="100px" alt="">
+            </div>
+            <p> Secure payment gateways</p>
+            <img src="/images/Pay/visa.jpg" height="50px" width="50px" alt="">
+            <img src="/images/Pay/master.jpg" height="50px" width="70px" alt="">
+        </div>
+        <div class="copyright">
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainImg.src = smallimg[3].src;
+        }
+    </script>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
